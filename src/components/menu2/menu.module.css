@@ -173,7 +173,10 @@
 .smMenu {
   display: none;
   margin-bottom: 9px;
+  overflow: auto;
+  height: 80vh;
 }
+
 .filter {
   display: block;
   height: 40px;
