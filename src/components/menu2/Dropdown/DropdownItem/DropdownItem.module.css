@@ -1,0 +1,13 @@
+.dropdownitem {
+  height: 40px;
+  padding-left: 8px;
+}
+.dropdownitem:hover {
+  background-color: rgb(163, 4, 255);
+}
+@media (max-width: 710px) {
+  .dropdownitem {
+    font-size: 15px;
+    height: 20px;
+  }
+}

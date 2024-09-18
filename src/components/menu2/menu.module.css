@@ -1,0 +1,295 @@
+.menu {
+  padding: 0.5rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background-color: #fff;
+  align-items: center;
+}
+.menu div {
+  gap: 0.65rem;
+}
+
+.menu img {
+  width: 120px;
+  height: 50px;
+}
+.menu div ul li a svg {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+.menu ul p {
+  font-size: 12px;
+}
+.menu ul {
+  gap: 0.5rem;
+}
+.menufonction {
+  display: flex;
+}
+.menu select {
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0);
+}
+.menu select:focus {
+  outline: none;
+  border: none;
+}
+.menu ul li {
+  position: relative;
+  transition: 0.5s;
+}
+.spanNotification {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(135, 0, 212);
+  top: 20px;
+  right: 20px;
+}
+
+.search {
+  padding: 0%;
+  height: 50px;
+  display: flex;
+  gap: 0px;
+  border: 2px solid;
+  border-color: rgb(135, 0, 212);
+  width: auto;
+  border-radius: 25px;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+
+  padding: 0;
+}
+.search2 {
+  padding: 0%;
+  height: 30px;
+  display: flex;
+  gap: 0px;
+  border: 2px solid;
+  border-color: rgb(135, 0, 212);
+  width: auto;
+  border-radius: 25px;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+  margin: 10px;
+  padding: 0;
+  display: none;
+}
+.search2 svg {
+  font-size: 20px;
+  align-items: baseline;
+}
+
+.menuliste {
+  display: flex;
+  position: relative;
+}
+
+.drop {
+  display: flex;
+  width: 120px;
+  height: 48px;
+  justify-content: space-between;
+  padding-left: 8px;
+  border-radius: 25px 0 0 25px;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgb(135, 0, 212);
+  margin: 0;
+}
+.drop p {
+  font-size: 16px;
+}
+.drop svg {
+  font-size: 23px;
+  vertical-align: auto;
+}
+.inputTxt {
+  height: 50px;
+  background-color: #ffffff00;
+  flex: 1;
+}
+.inputTxt:focus {
+  outline: none;
+  border: none;
+}
+.btn {
+  padding: 5px;
+  height: 50px;
+}
+.btnIco {
+  height: 100%;
+  font-size: 20px;
+  vertical-align: 50%;
+  color: rgb(135, 0, 212);
+}
+
+.borderBottom {
+  height: 100%;
+  width: auto;
+}
+.borderBottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.205rem;
+  background: rgb(135, 0, 212);
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+.borderBottom:hover:after {
+  transform: scale(1, 1);
+}
+.menubtn {
+  font-size: 20px;
+  display: none;
+  color: rgb(135, 0, 212);
+}
+.menubtn svg {
+  font-size: 40;
+  margin-right: 10px;
+}
+.smMenu {
+  background-color: #fff;
+}
+
+.inputTxt2 {
+  min-width: 100px;
+  flex: 1;
+  font-size: 12px;
+  height: 25px;
+}
+.inputTxt2:focus {
+  outline: none;
+  border: none;
+}
+.smMenu {
+  display: none;
+  margin-bottom: 9px;
+}
+.filter {
+  display: block;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(135, 0, 212);
+}
+.filter ul {
+  display: flex;
+  justify-content: center;
+}
+.filter ul li {
+  padding: 8px;
+  font-size: 15px;
+}
+.filter ul li:hover {
+  background-color: #ffffff2f;
+}
+
+@media (max-width: 925px) {
+  .menufonction {
+    display: none;
+  }
+
+  .menubtn {
+    font-size: 20px;
+    display: block;
+  }
+  .smMenu {
+    display: block;
+  }
+  .smMenu h5 {
+    color: #888787;
+    text-align: center;
+    font-size: 13px;
+  }
+  .smMenufonction {
+    margin-bottom: 10px;
+  }
+  .smMenufonction li {
+    padding: 5px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .smMenufonction li a {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .smMenufonction li a:hover {
+    color: rgb(135, 0, 212);
+  }
+  .smMenufonction li svg {
+    font-size: 18px;
+  }
+  .smfilter {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .smfilter li {
+    padding: 5px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .smfilter li a:hover {
+    color: rgb(135, 0, 212);
+  }
+}
+@media (max-width: 710px) {
+  .filter {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .search2 {
+    display: flex;
+  }
+  .search2 svg {
+    font-size: 12px;
+  }
+  .btnsearch {
+    height: 100%;
+    padding-right: 8px;
+  }
+  .btn {
+    padding: 8px 0;
+  }
+  .inputTxt {
+    font-size: 10px;
+  }
+  .menuliste {
+    position: absolute;
+    right: 0;
+  }
+  .menu img {
+    width: 90px;
+    height: 40px;
+  }
+  .menu div ul li a svg {
+    font-size: 17px;
+  }
+  .menu p {
+    font-size: 12px;
+  }
+  .inputTxt {
+    height: 30px;
+    font-size: 15px;
+  }
+  .smMenufonction li a {
+    font-size: 12px;
+  }
+  .smMenu h5 {
+    font-size: 11px;
+  }
+  .smfilter {
+    font-size: 12px;
+  }
+}
